@@ -1,0 +1,95 @@
+@import '../variables';
+
+.header-section{
+    background-color: $header-color;
+    color: #ffffff;
+    width: 100vw;
+    padding:0px 50px;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.header-inner{
+    padding:50px 0px;
+}
+.site-title{
+    font-size: 26px;
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 0px;
+}
+.site-title a{
+    // font-family: sans-serif;
+    letter-spacing: .111111em;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1em;
+    position: relative;
+    // top: -.15em;
+    color: #fff;
+    vertical-align: middle;
+}
+.main-nav{
+    margin-top: 10px;
+}
+.index{
+    display: inline-block;
+}
+
+.main-nav div a{
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    line-height: 1em;
+    color: #ff0;
+    display: block;
+    padding: .75em 1em;
+    // margin: auto 2.5px;;
+}
+#nav-home{
+    color: white;
+}
+.main-nav div a:hover{
+    color:white;
+}
+.floating-nav{
+    width: 100vw;
+    position:fixed;
+    left: 0;
+    top: -45px;
+    background-color: $header-color;
+    z-index:1000;
+    transition-duration: .5s;
+}
+.floating-nav div a{
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    line-height: 1em;
+    color: #ff0;
+    display: block;
+    padding: .75em 1em;
+    // margin: auto 2.5px;;
+}
+.floating-nav div a:hover{
+    color:white;
+}
+.home.yellow{
+    color: #ff0;
+}
+.skills.white{
+    color: #fff;
+}
+.projects.white{
+    color: #fff;
+}
+.contact.white{
+    color: #fff;
+}
+

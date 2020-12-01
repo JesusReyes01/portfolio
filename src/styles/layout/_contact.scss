@@ -1,0 +1,16 @@
+@import '../variables';
+
+.contact-section{
+    background-color: $header-color;
+    padding: 100px;
+    color: white;
+}
+.contact-section p{
+    font-size: 20px;
+}
+.contact-links a{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}

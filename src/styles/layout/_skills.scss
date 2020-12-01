@@ -1,0 +1,29 @@
+@import '../variables';
+.skills-section{
+    background-color: rgb(139, 139, 139);
+    // background-color: #2B7A78;
+    padding: 50px;
+    color: white;
+}
+.skills-title{
+    padding-bottom: 50px;
+}
+.skills-list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+}
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: 2em;
+}
+.skill-img {
+    max-height: 100px;
+}

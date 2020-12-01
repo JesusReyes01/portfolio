@@ -1,0 +1,37 @@
+@import '../variables';
+.about-section{
+    background-color: $about-color;
+    color: $text-color;
+}
+.about-main-text{
+    padding: 200px 0px 200px 100px;
+    width: 50vw;
+}
+.about-text{
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    padding: 17px;
+    margin-bottom: 0px;
+}
+.icon-flex{
+    padding: 17px;
+}
+.icon{
+    display: inline-block;
+    margin: 0px 6px 0px 6px;
+    width: 55px;
+    transition-duration: 1s;
+}
+.icon:hover{
+    display: inline-block;
+    margin: 0px 6px 0px 6px;
+    transform: scale(2,2);
+}
+.icon a{
+    color:$text-color;
+    transition-duration: 1s;
+}
+.icon a:hover{
+    color: rgb(255, 255, 110);
+}
