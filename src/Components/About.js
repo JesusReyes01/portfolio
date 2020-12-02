@@ -1,4 +1,5 @@
 import React from 'react'
+import SplitText from "./SplitText.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
@@ -12,7 +13,13 @@ const About = () => {
     return(
         <section id='about' className='about-section'>
             <div className='about-main-text'>
-                <h2 className='about-text'>WEB DEVELOPER</h2>
+                <h1 className='about-text'>
+                    <SplitText
+                        copy="Web Developer"
+                        role="heading"
+                    />
+                </h1>
+                {/* <h2 className='about-text'>WEB DEVELOPER</h2> */}
                 <div className='icon-flex'>
                     <div className='icon' ><a href='https://www.linkedin.com/in/jesusreyes01'>{linkedInSquare}</a></div>
                     <div className='icon'><a href='https://github.com/JesusReyes01'>{githubSquare}</a></div>

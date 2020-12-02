@@ -1,11 +1,11 @@
 .projects-section{
-    background-color: rgb(121, 56, 56);
-    // background-color: #2B7A78;
+    background-color: $projects-color;
     padding: 50px 300px;
-    color: white;
+    color: $text-color;
 }
 .projects-title{
     padding-bottom: 50px;
+    letter-spacing: .111111em;
 }
 .scango{
     padding:20px;
@@ -64,12 +64,12 @@
     font-size: 20px;
 }
 .scanGoCarousel{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 50px;
 }
 .journalizeCarousel{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 50px;
 }

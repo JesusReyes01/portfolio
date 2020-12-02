@@ -1,18 +1,24 @@
 @import '../variables';
 .about-section{
     background-color: $about-color;
+    background-image: url('../../assets/site/skills-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     color: $text-color;
 }
 .about-main-text{
-    padding: 200px 0px 200px 100px;
+    padding: 200px 0px 300px 100px;
     width: 50vw;
 }
 .about-text{
-    font-size: 54px;
+    font-size: 4em;
     font-weight: 400;
     letter-spacing: .05em;
     padding: 17px;
     margin-bottom: 0px;
+    text-align: center;
+    color: $text-color;
 }
 .icon-flex{
     padding: 17px;
@@ -34,4 +40,34 @@
 }
 .icon a:hover{
     color: rgb(255, 255, 110);
+}
+
+  
+h1 span span {
+    position: relative;
+    animation: move-text-color .5s ease-out forwards;
+    bottom: -1em;
+    opacity: 0;
+}
+h1 span span:hover{
+    animation: infinite;
+}
+
+@keyframes move-text-color {
+    0% {
+        bottom: -0.2em;
+        opacity: 1;
+        color: #3E5C76;
+    }
+    
+    50% {
+        bottom: 0.2em;
+        color: #EC058E;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 1;
+    color: rgb(255, 255, 110);
+    }
 }

@@ -1,7 +1,7 @@
 @import '../variables';
 
 .header-section{
-    background-color: $header-color;
+    background-color: transparent;
     color: #ffffff;
     width: 100vw;
     padding:0px 50px;
@@ -24,12 +24,12 @@
     // font-family: sans-serif;
     letter-spacing: .111111em;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 1em;
     position: relative;
     // top: -.15em;
-    color: #fff;
-    vertical-align: middle;
+    color: $text-color;
+    // vertical-align: middle;
 }
 .main-nav{
     margin-top: 10px;
@@ -45,16 +45,16 @@
     letter-spacing: 1.5px;
     text-decoration: none;
     line-height: 1em;
-    color: #ff0;
+    color: $header-link-color;
     display: block;
     padding: .75em 1em;
     // margin: auto 2.5px;;
 }
 #nav-home{
-    color: white;
+    color: $text-color;
 }
 .main-nav div a:hover{
-    color:white;
+    color:$text-color;
 }
 .floating-nav{
     width: 100vw;
@@ -72,24 +72,24 @@
     letter-spacing: 1.5px;
     text-decoration: none;
     line-height: 1em;
-    color: #ff0;
+    color: $header-link-color;
     display: block;
     padding: .75em 1em;
     // margin: auto 2.5px;;
 }
 .floating-nav div a:hover{
-    color:white;
+    color:$text-color;
 }
 .home.yellow{
-    color: #ff0;
+    color: $header-link-color;
 }
 .skills.white{
-    color: #fff;
+    color: $text-color;
 }
 .projects.white{
-    color: #fff;
+    color: $text-color;
 }
 .contact.white{
-    color: #fff;
+    color: $text-color;
 }
 

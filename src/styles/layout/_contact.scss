@@ -8,9 +8,16 @@
 .contact-section p{
     font-size: 20px;
 }
-.contact-links a{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    font-size: 20px;
+.email-form{
+    width: 500px;
+    margin: 0 auto;
+}
+.form-message{
+    // height: 10em !important;
+    // line-height: 10em !important;
+    // overflow: scroll;
+    // overflow-wrap: normal;
+    // vertical-align: top;
+    // padding-top: 1em;
+    writing-mode: vertical-lr !important;
 }
