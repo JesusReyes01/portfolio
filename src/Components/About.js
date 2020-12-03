@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import SplitText from "./SplitText.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
     const linkedInSquare = <FontAwesomeIcon icon={faLinkedin} size='3x' />

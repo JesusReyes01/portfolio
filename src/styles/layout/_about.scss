@@ -8,12 +8,12 @@
     color: $text-color;
 }
 .about-main-text{
-    padding: 200px 0px 300px 100px;
-    width: 50vw;
+    padding: 200px 0px 300px 0px;
 }
 .about-text{
+    font-family: 'Montserrat', sans-serif;
     font-size: 4em;
-    font-weight: 600;
+    font-weight: 300;
     letter-spacing: .05em;
     padding: 17px;
     margin-bottom: 0px;
@@ -42,9 +42,10 @@
     color: $off-yellow;
 }
 
+
 h1 span span {
     position: relative;
-    animation: move-text-color .5s ease-out forwards;
+    animation: move-text-color .6s ease-out forwards;
     bottom: -1em;
     opacity: 0;
 }
@@ -56,7 +57,8 @@ h1 span span:hover{
     0% {
         bottom: -0.2em;
         opacity: 1;
-        color: #3E5C76;
+        // color: #3E5C76;
+        color: #116fc2;
     }
     
     50% {

@@ -8,20 +8,20 @@ const Header = () => {
         let skillsLink = document.getElementsByClassName("skills")[0]
         let projectsLink = document.getElementsByClassName("projects")[0]
         let contactLink = document.getElementsByClassName("contact")[0]
-        if (currentScrollPos > 530 && currentScrollPos < 1470) {
+        if (currentScrollPos > 640 && currentScrollPos < 1350) {
             document.getElementById("navbar").style.top = "0";
             homeLink.classList.add('yellow')
             skillsLink.classList.add('white')
             projectsLink.classList.remove('white')
             contactLink.classList.remove('white')
         } 
-        else if (currentScrollPos > 1470 && currentScrollPos < 3300){
+        else if (currentScrollPos > 1350 && currentScrollPos < 3500){
             document.getElementById("navbar").style.top = "0";
             skillsLink.classList.remove('white')
             projectsLink.classList.add('white')
             contactLink.classList.remove('white')
         }
-        else if (currentScrollPos > 3300){
+        else if (currentScrollPos > 3500){
             document.getElementById("navbar").style.top = "0";
             skillsLink.classList.remove('white')
             projectsLink.classList.remove('white')

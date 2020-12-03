@@ -13,23 +13,20 @@
     padding:50px 0px;
 }
 .site-title{
-    font-size: 26px;
-    width: 250px;
+    width: 400px;
     position: relative;
     left: 50%;
     transform: translate(-50%,0);
     margin-bottom: 0px;
 }
 .site-title a{
-    // font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: .111111em;
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 300;
+    font-size: 36px;
     line-height: 1em;
     position: relative;
-    // top: -.15em;
     color: $text-color;
-    // vertical-align: middle;
 }
 .main-nav{
     margin-top: 10px;
@@ -48,7 +45,6 @@
     color: $header-link-color;
     display: block;
     padding: .75em 1em;
-    // margin: auto 2.5px;;
 }
 #nav-home{
     color: $text-color;

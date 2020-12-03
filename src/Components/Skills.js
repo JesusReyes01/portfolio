@@ -10,6 +10,9 @@ import sass from '../assets/skills/sass.png'
 import css3 from '../assets/skills/css3.png'
 import html5 from '../assets/skills/html5.png'
 import git from '../assets/skills/git.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const Skills = () => {
     const skills = [
@@ -24,6 +27,8 @@ const Skills = () => {
         {name: 'POSTGRESQL', img: postgresql},
         {name: 'GIT', img: git},
     ]
+    const chevronLeft = <FontAwesomeIcon icon={faChevronLeft} size='2x' />
+    const chevronRight = <FontAwesomeIcon icon={faChevronRight} size='2x' />
 
     const skillsMapped = skills.map((skill, i) => {
         return (
@@ -58,16 +63,19 @@ const Skills = () => {
     return (
         <section id='skills' className='skills-section'>
             <h2 className='skills-title'>SKILLS</h2>
-            <div className="stage">
-                <div class="carousel">
-                    {skillsMapped}
+            <div className='carousel-flex'>
+                <button className="skills-left-arrow" onClick={previous}>{chevronLeft}</button>
+                <div className="stage">
+                    <div class="carousel">
+                        {skillsMapped}
+                    </div>
                 </div>
+                <button className="skills-right-arrow" onClick={next}>{chevronRight}</button>
             </div>
-            <p className='skill-buttons-flex'>
+            {/* <p className='skill-buttons-flex'>
                 <Button className="skills-button" onClick={previous}>Previous</Button>
                 <Button className="skills-button" onClick={next}>Next</Button>
-            </p>
-            
+            </p> */}
         </section>
 
     )
