@@ -13,7 +13,7 @@
 }
 .about-text{
     font-size: 4em;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: .05em;
     padding: 17px;
     margin-bottom: 0px;
@@ -39,10 +39,9 @@
     transition-duration: 1s;
 }
 .icon a:hover{
-    color: rgb(255, 255, 110);
+    color: $off-yellow;
 }
 
-  
 h1 span span {
     position: relative;
     animation: move-text-color .5s ease-out forwards;
@@ -62,12 +61,11 @@ h1 span span:hover{
     
     50% {
         bottom: 0.2em;
-        color: #EC058E;
+        color: $off-yellow;
     }
-
     100% {
         bottom: 0;
         opacity: 1;
-    color: rgb(255, 255, 110);
+        color: white;
     }
 }

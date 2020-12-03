@@ -1,10 +1,15 @@
 @import '../variables';
 .skills-section{
-    background-color: $skills-color;
-    padding: 50px 250px;
+    background-color: black;
+    background: rgb(92,92,92);
+    background: radial-gradient(circle, rgba(92,92,92,1) 0%, rgba(0,0,0,1) 40%);
+    padding: 100px ;
     color: $text-color;
 }
 .skills-title{
+    color: $off-yellow;
+    font-weight: 200;
+    font-size: 3em;
     padding-bottom: 50px;
     letter-spacing: .111111em;
 }
@@ -25,5 +30,68 @@
     margin-bottom: 2em;
 }
 .skill-img {
-    max-height: 100px;
+    padding-top: 10px;
+    height: 180px;
+}
+.stage {
+    box-sizing: border-box;
+    // border: 1px solid #CCC;
+    margin: 40px 0;
+    position: relative;
+    width: 410px;
+    height: 220px;
+    margin: 40px auto;
+    perspective: 1000px;
+  }
+  
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-615.5px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    // -webkit-animation: spin 8s infinite linear;
+  }
+  
+.carousel__cell {
+    position: absolute;
+    width: 390px;
+    height: 200px;
+    left: 10px;
+    top: 10px;
+    border: 2px solid black;
+    line-height: 116px;
+    font-size: 28px;
+    font-weight: 300 !important;
+    font-weight: bold;
+    // color: $off-yellow;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotateY(0); }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(615.5px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 36deg) translateZ(615.5px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 72deg) translateZ(615.5px); }
+.carousel__cell:nth-child(4) { transform: rotateY(108deg) translateZ(615.5px); }
+.carousel__cell:nth-child(5) { transform: rotateY(144deg) translateZ(615.5px); }
+.carousel__cell:nth-child(6) { transform: rotateY(180deg) translateZ(615.5px); }
+.carousel__cell:nth-child(7) { transform: rotateY(216deg) translateZ(615.5px); }
+.carousel__cell:nth-child(8) { transform: rotateY(252deg) translateZ(615.5px); }
+.carousel__cell:nth-child(9) { transform: rotateY(288deg) translateZ(615.5px); }
+.carousel__cell:nth-child(10) { transform: rotateY(324deg) translateZ(615.5px); }
+
+.skill-buttons-flex{
+    margin: 120px auto;
+    display:flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.skills-button{
+    width: 100px;
 }

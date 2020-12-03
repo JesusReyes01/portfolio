@@ -19,7 +19,7 @@ const About = () => {
                         role="heading"
                     />
                 </h1>
-                {/* <h2 className='about-text'>WEB DEVELOPER</h2> */}
+                
                 <div className='icon-flex'>
                     <div className='icon' ><a href='https://www.linkedin.com/in/jesusreyes01'>{linkedInSquare}</a></div>
                     <div className='icon'><a href='https://github.com/JesusReyes01'>{githubSquare}</a></div>

@@ -12,6 +12,7 @@ const Contact = () => {
         message: ''
     })
     const [showReject, setShowReject] = useState(false);
+    const [emailSent, setEmailSent] = useState(false);
 
     const handleInput = (event) => {
         setEmail({...emailBody, [event.target.name]: event.target.value})
@@ -24,7 +25,7 @@ const Contact = () => {
         await axios
             .post('/api/email', {name, email, subject, message})
             .then(() => {
-                alert('email sent!')
+                setEmailSent(true)
                 setEmail({name: '', email: '', subject: '', message: ''})
             })
             .catch(err => {
@@ -37,25 +38,35 @@ const Contact = () => {
             {showReject?
                 <Alert className="email-alert" variant="danger" onClose={() => setShowReject(false)} dismissible>
                     <Alert.Heading>Oh snap!</Alert.Heading>
-                      <p>Email is not on file</p>
+                      <p>Something went wrong. Please try again.</p>
                 </Alert>:<></>
             }
-            <h2>CONTACT</h2>
+            {emailSent?
+                <Alert className="email-alert" variant="success" onClose={() => setEmailSent(false)} dismissible>
+                    <Alert.Heading>Thank You!</Alert.Heading>
+                      <p>I will reply ASAP!</p>
+                </Alert>:<></>
+            }
+            <h2 className='contact-title'>CONTACT</h2>
             <p>I'd love to hear from you!</p>
 
             <Form onSubmit={sendEmail} className='email-form'>
                 <Form.Group controlId="formBasicName">
-                    <Form.Control type="text" placeholder="Name" name='name' onChange={(e) =>  handleInput(e)} />
+                    <Form.Control value={emailBody.name} type="text" placeholder="Name" name='name' onChange={(e) =>  handleInput(e)} required />
                 </Form.Group>
                 <Form.Group controlId="formBasicEmail">
-                    <Form.Control type="email" placeholder="Email" name='email' onChange={(e) =>  handleInput(e)} />
+                    <Form.Control value={emailBody.email} type="email" placeholder="Email" name='email' onChange={(e) =>  handleInput(e)} required/>
                 </Form.Group>
                 <Form.Group controlId="formBasicSubject">
-                    <Form.Control type="text" placeholder="Subject" name='subject' onChange={(e) =>  handleInput(e)} />
+                    <Form.Control value={emailBody.subject} type="text" placeholder="Subject" name='subject' onChange={(e) =>  handleInput(e)} required/>
                 </Form.Group>
                 <Form.Group >
-                    <Form.Control className='form-message' as="textarea" rows='6' placeholder="Message" name='message' onChange={(e) =>  handleInput(e)}/>
+                    <Form.Control value={emailBody.message} as="textarea" rows='6' placeholder="Message" name='message' onChange={(e) =>  handleInput(e)} required/>
                 </Form.Group>
+                {emailSent?
+                <Form.Text className="confirmation-text">
+                    Email Sent! Thank you!
+                </Form.Text>:<></>}
                 <Button variant="primary" type="submit">
                     Send
                 </Button>

@@ -1,9 +1,20 @@
 @import '../variables';
 
 .contact-section{
-    background-color: $header-color;
+    background-color: black;
     padding: 100px;
     color: white;
+}
+.email-alert{
+    width: 400px;
+    margin:0 auto;
+}
+.contact-title{
+    color: $off-yellow;
+    font-weight: 200;
+    font-size: 3em;
+    padding-bottom: 50px;
+    letter-spacing: .111111em;
 }
 .contact-section p{
     font-size: 20px;
@@ -12,12 +23,8 @@
     width: 500px;
     margin: 0 auto;
 }
-.form-message{
-    // height: 10em !important;
-    // line-height: 10em !important;
-    // overflow: scroll;
-    // overflow-wrap: normal;
-    // vertical-align: top;
-    // padding-top: 1em;
-    writing-mode: vertical-lr !important;
+.confirmation-text{
+    color: green;
+    padding: 10px;
+    font-size: 16px;
 }

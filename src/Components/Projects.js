@@ -66,6 +66,10 @@ const Projects = () => {
                     {journalizeImgMapped}
                 </Carousel>
             </article>
+            <article className='portfolio'>
+                <p>View this portfolio site's source code on <a href='https://github.com/JesusReyes01/portfolio'>GitHub</a></p>
+
+            </article>
             
         </section>
     )

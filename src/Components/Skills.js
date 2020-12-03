@@ -1,5 +1,5 @@
 import React from 'react';
-// const react = require(`../assets/skills/react.png`);
+import Button from 'react-bootstrap/Button';
 import react from '../assets/skills/react.png'
 import redux from '../assets/skills/redux.png'
 import node from '../assets/skills/node.png'
@@ -15,40 +15,59 @@ const Skills = () => {
     const skills = [
         {name: 'REACT', img: react},
         {name: 'REDUX', img: redux},
+        {name: 'JAVASCRIPT', img: javascript},
+        {name: 'HTML5', img: html5},
+        {name: 'CSS3', img: css3},
+        {name: 'SASS', img: sass},
         {name: 'NODE', img: node},
         {name: 'EXPRESS', img: express},
-        {name: 'JAVASCRIPT', img: javascript},
         {name: 'POSTGRESQL', img: postgresql},
-        {name: 'SASS', img: sass},
-        {name: 'CSS3', img: css3},
-        {name: 'HTML5', img: html5},
         {name: 'GIT', img: git},
     ]
-    // const img = require(`../assets/skills/react.png`)
 
     const skillsMapped = skills.map((skill, i) => {
         return (
-            <li key={i}>
-                <figure className='skill-container'>
-                    <img className='skill-img' src={skill.img} alt={skill.name}/>
-                    <figcaption>
-                        {skill.name}
-                    </figcaption>
-                </figure>
-            </li>
+            <div className='carousel__cell'>
+                <img className="skill-img" src={skill.img} alt={skill.name}/>
+                <p>{skill.name}</p>
+            </div>
         )
     })
-    // console.log(skillsMapped)
+
+    let selectedIndex = 0;
+
+    const rotateCarousel = () => {
+        let carousel = document.querySelector('.carousel');
+        let cellCount = 10;
+  
+        let angle = selectedIndex / cellCount * -360;
+        carousel.style.transform = 'translateZ(-615.5px) rotateY(' + angle + 'deg)';
+    }
+
+    const previous = () =>  {
+        selectedIndex--;
+        rotateCarousel();
+    };
+
+    
+    const next = () =>  {
+        selectedIndex++;
+        rotateCarousel();
+    };
 
     return (
         <section id='skills' className='skills-section'>
             <h2 className='skills-title'>SKILLS</h2>
-            <ul className='skills-list'>
-                {skillsMapped}
-            </ul>
-            {/* <button>begin <img alt='gitss' src={require('./git.png')}/></button>
-            <button>begin <img alt='git' src={require('../assets/skills/git.png')}/></button> */}
-
+            <div className="stage">
+                <div class="carousel">
+                    {skillsMapped}
+                </div>
+            </div>
+            <p className='skill-buttons-flex'>
+                <Button className="skills-button" onClick={previous}>Previous</Button>
+                <Button className="skills-button" onClick={next}>Next</Button>
+            </p>
+            
         </section>
 
     )

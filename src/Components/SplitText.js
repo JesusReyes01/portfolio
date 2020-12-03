@@ -1,10 +1,10 @@
-import React, {Component} from "react";
+import React from "react";
 
-export default class SplitText extends Component {
-    render() {
+ const SplitText = (props) => {
+    
       return (
-        <span aria-label={this.props.copy} role={this.props.role}>
-          {this.props.copy.split("").map(function(char, index){
+        <span aria-label={props.copy} role={props.role}>
+          {props.copy.split("").map(function(char, index){
             let style = {"animation-delay": (0.5 + index / 10) + "s"}
             return <span
               aria-hidden="true"
@@ -15,8 +15,10 @@ export default class SplitText extends Component {
           })}
         </span>
       );
-    }
+    
   }
+
+  export default SplitText
   
   
   
