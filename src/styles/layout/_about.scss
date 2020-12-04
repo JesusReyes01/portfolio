@@ -1,7 +1,8 @@
 @import './variables';
 .about-section{
     background-color: $about-color;
-    background-image: url('../../assets/site/skills-background.png');
+    // background-image: url('../../assets/site/skills-background.png');
+    background-image: url(https://personal-project1.s3.amazonaws.com/e6fa0bf1-59ab-4805-b899-8ffca492a98e-header-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;

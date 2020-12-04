@@ -3,6 +3,10 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 import Alert from 'react-bootstrap/Alert';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
     const [emailBody, setEmail] = useState({
@@ -17,8 +21,11 @@ const Contact = () => {
     const handleInput = (event) => {
         setEmail({...emailBody, [event.target.name]: event.target.value})
     }  
-    
 
+    const linkedInSquare = <FontAwesomeIcon icon={faLinkedin} size='3x' />
+    const githubSquare = <FontAwesomeIcon icon={faGithubSquare} size='3x' />
+    const emailSquare = <FontAwesomeIcon icon={faEnvelopeSquare} size='3x' />
+    
     const sendEmail = async(e) => {
         e.preventDefault();
         const {name, email, subject, message} = emailBody;
@@ -71,6 +78,11 @@ const Contact = () => {
                     Send
                 </Button>
             </Form>
+            <div className='contact-icon-flex'>
+                <div className='icon' ><a href='https://www.linkedin.com/in/jesusreyes01'>{linkedInSquare}</a></div>
+                <div className='icon'><a href='https://github.com/JesusReyes01'>{githubSquare}</a></div>
+                <div className='icon'><a href='mailto: me@jesusreyes.dev'>{emailSquare}</a></div>
+            </div>
         </section>
     )
 

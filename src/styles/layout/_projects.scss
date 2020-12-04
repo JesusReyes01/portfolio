@@ -27,7 +27,7 @@
             color:$off-yellow;
         }
         .scanGoCarousel{
-            width: 70%;
+            width: 100%;
             margin: 0 auto;
             padding-bottom: 50px;
             .w-101{
@@ -122,6 +122,9 @@ strong{
         }
         .scango{
             padding:30px;
+            .scanGoCarousel{
+                width: 80%;
+            }
         }
         .scango p{
             width: 80%;
