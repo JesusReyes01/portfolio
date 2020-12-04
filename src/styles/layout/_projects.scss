@@ -116,7 +116,7 @@ strong{
 
 @media (min-width: $breakpoint-tablet){
     .projects-section{
-        padding: 50px 100px;
+        padding: 50px 10vw;
         .projects-title{
             font-weight: 200;
             font-size: 3em;
@@ -185,7 +185,7 @@ strong{
 }
 @media (min-width: $breakpoint-desktop){
     .projects-section{
-        padding: 20px 300px;
+        padding: 20px 18vw;
         .projects-title{
             font-weight: 200;
             font-size: 3em;
