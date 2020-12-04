@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import react from '../assets/skills/react.png'
 import redux from '../assets/skills/redux.png'
@@ -15,6 +15,8 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const Skills = () => {
+    const [spinning, setSpin] = useState(true)
+
     const skills = [
         {name: 'REACT', img: react},
         {name: 'REDUX', img: redux},
@@ -42,11 +44,22 @@ const Skills = () => {
     let selectedIndex = 0;
 
     const rotateCarousel = () => {
-        let carousel = document.querySelector('.carousel');
+        let carousel = document.getElementById('skills-carousel');
         let cellCount = 10;
-  
         let angle = selectedIndex / cellCount * -360;
         carousel.style.transform = 'translateZ(-615.5px) rotateY(' + angle + 'deg)';
+    }
+    const stopCarousel = () => {
+       let carousel = document.getElementById('skills-carousel');
+        carousel.style.transform = 'translateZ(-615.5px)';
+        carousel.style.animation= 'none';
+        setSpin(false)
+    }
+    const startCarousel = () => {
+        let carousel = document.getElementById('skills-carousel');
+        carousel.style.transform = 'translateZ(-615.5px)';
+        carousel.style.animation= 'spin 18s infinite linear';
+        setSpin(true)
     }
 
     const previous = () =>  {
@@ -64,18 +77,24 @@ const Skills = () => {
         <section id='skills' className='skills-section'>
             <h2 className='skills-title'>SKILLS</h2>
             <div className='carousel-flex'>
-                <button className="skills-left-arrow" onClick={previous}>{chevronLeft}</button>
+                {spinning?
+                <></>
+                :
+                <button className="skills-left-arrow" onClick={previous}>{chevronLeft}</button>}
                 <div className="stage">
-                    <div class="carousel">
+                    <div id='skills-carousel' /*className="carousel"*/>
                         {skillsMapped}
                     </div>
                 </div>
-                <button className="skills-right-arrow" onClick={next}>{chevronRight}</button>
+                {spinning?
+                <></>
+                :
+                <button className="skills-right-arrow" onClick={next}>{chevronRight}</button>}
             </div>
-            {/* <p className='skill-buttons-flex'>
-                <Button className="skills-button" onClick={previous}>Previous</Button>
-                <Button className="skills-button" onClick={next}>Next</Button>
-            </p> */}
+            {/* {spinning?
+            <Button onClick={stopCarousel}>Stop Spin</Button>
+            :
+            <Button onClick={startCarousel}>Start Spin</Button>} */}
         </section>
 
     )

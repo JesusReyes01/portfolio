@@ -1,30 +1,79 @@
 @import '../variables';
 
 .contact-section{
-    background-color: black;
-    padding: 100px;
+    background-color: $contact-color;
     color: white;
-}
-.email-alert{
-    width: 400px;
-    margin:0 auto;
-}
-.contact-title{
-    color: $off-yellow;
-    font-weight: 200;
-    font-size: 3em;
-    padding-bottom: 50px;
-    letter-spacing: .111111em;
+    padding: 50px 0px;
+
+    .email-alert{
+        width: 300px;
+        margin:0 auto;
+    }
+    .contact-title{
+        color: $off-yellow;
+        font-weight: 200;
+        font-size: 2.5em;
+        padding-bottom: 50px;
+        letter-spacing: .111111em;
+    }
+    .email-form{
+        width: 300px;
+        margin: 0 auto;
+    
+        .confirmation-text{
+            color: green;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    }
 }
 .contact-section p{
-    font-size: 20px;
-}
-.email-form{
-    width: 500px;
-    margin: 0 auto;
-}
-.confirmation-text{
-    color: green;
-    padding: 10px;
     font-size: 16px;
+}
+@media (min-width: $breakpoint-tablet){
+    .contact-section{
+        padding: 100px;
+        .email-alert{
+            width: 400px;
+        }
+        .contact-title{
+            font-weight: 200;
+            font-size: 3em;
+            padding-bottom: 50px;
+            letter-spacing: .111111em;
+        }
+        .email-form{
+            width: 400px;    
+            .confirmation-text{
+                font-size: 16px;
+            }
+        }
+    }
+    .contact-section p{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: $breakpoint-desktop){
+    .contact-section{
+        padding: 150px;
+        .email-alert{
+            width: 400px;
+        }
+        .contact-title{
+            font-weight: 200;
+            font-size: 3em;
+            padding-bottom: 50px;
+            letter-spacing: .111111em;
+        }
+        .email-form{
+            width: 500px;    
+            .confirmation-text{
+                font-size: 16px;
+            }
+        }
+    }
+    .contact-section p{
+        font-size: 20px;
+    }
 }
