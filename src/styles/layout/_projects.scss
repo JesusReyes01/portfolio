@@ -118,134 +118,62 @@ strong{
     .projects-section{
         padding: 50px 10vw;
         .projects-title{
-            font-weight: 200;
             font-size: 3em;
-            padding-bottom: 50px;
         }
         .scango{
             padding:30px;
-            margin-bottom: 70px;
-
-            .project-links{
-                display: flex;
-                justify-content: space-around;
-                padding: 10px;
-                font-size: 20px;
-            }
-            .scanGoCarousel{
-                width: 70%;
-                padding-bottom: 50px;
-                .w-101{
-                    height: 400px;
-                }
-            }
-        }
-        .scango h2{
-            margin-bottom: 30px;
         }
         .scango p{
             width: 80%;
-            margin:0 auto;
-            padding-bottom: 15px;
             font-size: 18px;
-            text-align: left;
         }
         .journalize{
             padding:30px;
-            margin-bottom: 70px;
             
-            .project-links{
-                padding: 10px;
-                font-size: 20px;
-            }
-            .journalizeCarousel{
-                width: 80%;
-                padding-bottom: 50px;
-                .w-1000{
-                    width: 100% !important;
-
-                }
-            }
-        }
-        .journalize h2{
-                margin-bottom: 30px;
         }
         .journalize p{
             width: 80%;    
-            margin:0 auto;
-            padding-bottom: 15px;
             font-size: 18px;
-            text-align: left;
-        }
-        .portfolio{
-            padding:30px;
         }
     }
-
 }
 @media (min-width: $breakpoint-desktop){
     .projects-section{
-        padding: 20px 18vw;
+        padding: 50px 18vw;
         .projects-title{
-            font-weight: 200;
             font-size: 3em;
             padding-bottom: 50px;
         }
         .scango{
-            padding:30px;
             margin-bottom: 40px;
             
-            .project-links{
-                display: flex;
-                justify-content: space-around;
-                padding: 10px;
-                font-size: 20px;
-            }
             .scanGoCarousel{
-                width: 70%;
-                padding-bottom: 50px;
+
                 .w-101{
                     height: 500px;
                 }
             }
         }
         .scango h2{
-            margin-bottom: 30px;
-            letter-spacing: .111111em;
             font-size: 36px;
         }
         .scango p{
             width: 80%;
-            margin:0 auto;
-            padding-bottom: 15px;
             font-size: 18px;
-            text-align: left;
         }
         .journalize{
-            padding:30px;
             margin-bottom: 40px;
-        
-            .project-links{
-                padding: 10px;
-                font-size: 20px;
-            }
+          
             .journalizeCarousel{
                 width: 80%;
-                padding-bottom: 50px;
-                .w-1000{
-                    width: 100% !important;
-                }
+
             }
         }
         .journalize h2{
-            margin-bottom: 30px;
-            letter-spacing: .111111em;
             font-size: 36px;
         }
         .journalize p{
             width: 80%;
-            margin: 0 auto;
-            padding-bottom: 15px;
             font-size: 18px;
         }
         .portfolio{

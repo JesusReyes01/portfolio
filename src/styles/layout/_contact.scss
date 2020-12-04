@@ -1,9 +1,9 @@
-@import '../variables';
+@import './variables';
 
 .contact-section{
     background-color: $contact-color;
     color: white;
-    padding: 50px 0px;
+    padding: 50px 0px 50px 0px;
 
     .email-alert{
         width: 300px;
@@ -37,16 +37,11 @@
             width: 400px;
         }
         .contact-title{
-            font-weight: 200;
             font-size: 3em;
             padding-bottom: 50px;
-            letter-spacing: .111111em;
         }
         .email-form{
             width: 400px;    
-            .confirmation-text{
-                font-size: 16px;
-            }
         }
     }
     .contact-section p{
@@ -57,23 +52,9 @@
 @media (min-width: $breakpoint-desktop){
     .contact-section{
         padding: 150px;
-        .email-alert{
-            width: 400px;
-        }
-        .contact-title{
-            font-weight: 200;
-            font-size: 3em;
-            padding-bottom: 50px;
-            letter-spacing: .111111em;
-        }
+    
         .email-form{
             width: 500px;    
-            .confirmation-text{
-                font-size: 16px;
-            }
         }
-    }
-    .contact-section p{
-        font-size: 20px;
     }
 }

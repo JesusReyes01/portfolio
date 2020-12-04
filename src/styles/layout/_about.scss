@@ -1,4 +1,4 @@
-@import '../variables';
+@import './variables';
 .about-section{
     background-color: $about-color;
     background-image: url('../../assets/site/skills-background.png');
@@ -6,43 +6,44 @@
     background-repeat: no-repeat;
     background-position: bottom;
     color: $text-color;
-}
-.about-main-text{
-    padding: 200px 0px 300px 0px;
-}
-.about-text{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4em;
-    font-weight: 300;
-    letter-spacing: .05em;
-    padding: 17px;
-    margin-bottom: 0px;
-    text-align: center;
-    color: $text-color;
-}
-.icon-flex{
-    padding: 17px;
-}
-.icon{
-    display: inline-block;
-    margin: 0px 6px 0px 6px;
-    width: 55px;
-    transition-duration: 1s;
-}
-.icon:hover{
-    display: inline-block;
-    margin: 0px 6px 0px 6px;
-    transform: scale(2,2);
-}
-.icon a{
-    color:$text-color;
-    transition-duration: 1s;
-}
-.icon a:hover{
-    color: $off-yellow;
-}
 
-
+    .about-main-text{
+        padding: 200px 0px 300px 0px;
+    
+        .about-text{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            font-weight: 300;
+            letter-spacing: .05em;
+            padding: 17px;
+            margin-bottom: 0px;
+            text-align: center;
+            color: $text-color;
+        }
+        .icon-flex{
+            padding: 17px;
+        
+            .icon{
+                display: inline-block;
+                margin: 0px 6px 0px 6px;
+                width: 55px;
+                transition-duration: 1s;
+            }
+            .icon:hover{
+                display: inline-block;
+                margin: 0px 6px 0px 6px;
+                transform: scale(2,2);
+            }
+            .icon a{
+                color:$text-color;
+                transition-duration: 1s;
+            }
+            .icon a:hover{
+                color: $off-yellow;
+            }
+        }
+    }
+}
 h1 span span {
     position: relative;
     animation: move-text-color .6s ease-out forwards;
@@ -57,7 +58,6 @@ h1 span span:hover{
     0% {
         bottom: -0.2em;
         opacity: 1;
-        // color: #3E5C76;
         color: #116fc2;
     }
     
@@ -70,4 +70,17 @@ h1 span span:hover{
         opacity: 1;
         color: white;
     }
+}
+
+@media (min-width: $breakpoint-tablet){
+    .about-section{
+
+        .about-main-text{
+            padding: 200px 0px 300px 0px;
+
+            .about-text{
+                font-size: 4em;
+            }
+        }
+    }   
 }

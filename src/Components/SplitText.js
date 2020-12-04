@@ -15,7 +15,6 @@ import React from "react";
           })}
         </span>
       );
-    
   }
 
   export default SplitText

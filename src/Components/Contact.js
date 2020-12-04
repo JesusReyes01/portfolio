@@ -44,7 +44,7 @@ const Contact = () => {
             {emailSent?
                 <Alert className="email-alert" variant="success" onClose={() => setEmailSent(false)} dismissible>
                     <Alert.Heading>Thank You!</Alert.Heading>
-                      <p>I will reply ASAP!</p>
+                      <p>I will get back to you ASAP!</p>
                 </Alert>:<></>
             }
             <h2 className='contact-title'>CONTACT</h2>
