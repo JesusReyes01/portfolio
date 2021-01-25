@@ -83,6 +83,7 @@ const Contact = () => {
                 <div className='icon'><a href='https://github.com/JesusReyes01'>{githubSquare}</a></div>
                 <div className='icon'><a href='mailto: me@jesusreyes.dev'>{emailSquare}</a></div>
             </div>
+            <footer>CREATED BY: JESUS REYES</footer>
         </section>
     )
 

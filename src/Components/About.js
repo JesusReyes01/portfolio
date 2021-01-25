@@ -25,6 +25,7 @@ const About = () => {
                     <div className='icon'><a href='https://github.com/JesusReyes01'>{githubSquare}</a></div>
                     <div className='icon'><a href='mailto: me@jesusreyes.dev'>{emailSquare}</a></div>
                 </div>
+
             </div>
         </section>
     )

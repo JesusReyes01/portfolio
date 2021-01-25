@@ -30,10 +30,24 @@ const Projects = () => {
         }
     )
 
+    const pixelArtImgMapped = imgDir.projects.pixelArt.map((img, i) => {
+        return(
+            <Carousel.Item key={i}>
+                <img
+                    className="w-201"
+                    src={img}
+                    alt={`slide${i}`}
+                />
+            </Carousel.Item>
+            )
+        }
+    )
+
 
     return(
         <section id='projects' className='projects-section'>
             <h2 className='projects-title'>PROJECTS</h2>
+
             <article className='scango'>
                 <h2>Scan & Go</h2>
                 <p><strong>Context:</strong> Devmountain Group Project with 2 week time limit. 
@@ -51,21 +65,40 @@ const Projects = () => {
                     {scanGoImgMapped}
                 </Carousel>
             </article>
+
             <article className='journalize'>
                 <h2>Journalize</h2>
+
                 <p><strong>Context:</strong> Devmountain Personal Project with 2 week time limit. The goal 
                     was to make a full stack site that is fun, responsive, and easy to navigate.</p>
                 <p><strong>Description:</strong> Journalize is a private online journal/diary-hosting website. Users can create 
                     written entries similar to a standard personal journal.</p>
-                    <p><strong>Login credentials:</strong> Email: test@gmail.com Password: test , or feel free to register a new user.</p>
+                <p><strong>Login credentials:</strong> Email: test@gmail.com Password: test , or feel free to register a new user.</p>
+                
                 <div className='project-links'>
                     <a href="https://journalize.jesusreyes.dev/">DEMO</a>
                     <a href="https://github.com/JesusReyes01/journalize">SOURCE</a>
                 </div>
+                
                 <Carousel className='journalizeCarousel'>
                     {journalizeImgMapped}
                 </Carousel>
             </article>
+
+            <article className='pixelArt'>
+                <h2>Pixal Art</h2>
+                
+                <p><strong>Description:</strong>  Pixel Art is free online pixel drawing tool that allows you to make pixel art.</p>
+
+                <div className='project-links'>
+                    <a href="https://pixelart.jesusreyes.dev/">DEMO</a>
+                    <a href="https://github.com/JesusReyes01/Pixel-Art-React">SOURCE</a>
+                </div>
+                <Carousel className='pixelArtCarousel'>
+                    {pixelArtImgMapped}
+                </Carousel>
+            </article>
+
             <article className='portfolio'>
                 <p>View this portfolio site's source code on <a href='https://github.com/JesusReyes01/portfolio'>GitHub</a></p>
 

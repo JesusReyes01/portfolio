@@ -18,6 +18,12 @@ import sg6 from './scan&go/sg6.png'
 import sg7 from './scan&go/sg7.png'
 import sg8 from './scan&go/sg8.png'
 
+import mario from './pixelArt/Mario.png'
+import pokeball from './pixelArt/Pokeball.png'
+import megaman from './pixelArt/Megaman.png'
+
+
+
 export const imgDir = {
     projects: {
         journalize: [
@@ -39,6 +45,11 @@ export const imgDir = {
             sg6,
             sg7,
             sg8
+        ],
+        pixelArt: [
+            mario,
+            pokeball,
+            megaman
         ]
     }
 };

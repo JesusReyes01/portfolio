@@ -9,6 +9,8 @@ import sass from '../assets/skills/sass.png'
 import css3 from '../assets/skills/css3.png'
 import html5 from '../assets/skills/html5.png'
 import git from '../assets/skills/git.png'
+import python from '../assets/skills/python.png'
+import bootstrap from '../assets/skills/bootstrap.png'
 
 const Skills = () => {
 
@@ -16,9 +18,11 @@ const Skills = () => {
         {name: 'REACT', img: react},
         {name: 'REDUX', img: redux},
         {name: 'JAVASCRIPT', img: javascript},
+        {name: 'PYTHON', img: python},
         {name: 'HTML5', img: html5},
         {name: 'CSS3', img: css3},
         {name: 'SASS', img: sass},
+        {name: 'BOOTSTRAP', img: bootstrap},
         {name: 'NODE', img: node},
         {name: 'EXPRESS', img: express},
         {name: 'POSTGRESQL', img: postgresql},
