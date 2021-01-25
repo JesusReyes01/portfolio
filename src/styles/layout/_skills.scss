@@ -1,9 +1,9 @@
 @import './variables';
 .skills-section{
+    
     background-color: $skills-color;
-    background: rgb(92,92,92);
     background: radial-gradient(circle, rgba(92,92,92,1) 0%, rgba(0,0,0,1) 55%);
-    padding: 70px;
+    padding: 120px;
     color: $text-color;
 
     .skills-title{
@@ -44,15 +44,15 @@
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                transform: translateZ(-200px);
+                transform: translateZ(-335px);
                 transform-style: preserve-3d;
                 transition: transform 1s;
                 animation: spin 18s infinite linear;
 
                 .carousel__cell {
                     position: absolute;
-                    width: 120px;
-                    height: 120px;
+                    width: 100px;
+                    height: 140px;
                     left: 10px;
                     top: 10px;
                     border: 2px solid black;
@@ -63,10 +63,16 @@
                     text-align: center;
                     border-radius: 12px;
                     // background-color: black;
-                    background-color: rgba(255, 255, 255, .9);
+                    // background-color: rgba(255, 255, 255, .9);
+                    background-color: rgba(255, 255, 255, 0.8);
+                        box-shadow: 0 2px 1rem 0 rgba(100, 100, 100, 0.5),
+							0 -0.25rem .5rem rgb(102, 102, 102) inset,
+							0 0.75rem .5rem rgba(114, 114, 114, 0.5) inset,
+							0 0.25rem .5rem 0 rgb(117, 117, 117) inset;
+                    
 
                     .skill-img {
-                        padding-top: 0px;
+                        padding-top: 20px;
                         height: 80px;
                     }
                 }
@@ -90,17 +96,18 @@
     to   {transform: translateZ(-200px) rotateY(-360deg); }
 }
 
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(200px); }
-.carousel__cell:nth-child(2) { transform: rotateY( 36deg) translateZ(200px); }
-.carousel__cell:nth-child(3) { transform: rotateY( 72deg) translateZ(200px); }
-.carousel__cell:nth-child(4) { transform: rotateY(108deg) translateZ(200px); }
-.carousel__cell:nth-child(5) { transform: rotateY(144deg) translateZ(200px); }
-.carousel__cell:nth-child(6) { transform: rotateY(180deg) translateZ(200px); }
-.carousel__cell:nth-child(7) { transform: rotateY(216deg) translateZ(200px); }
-.carousel__cell:nth-child(8) { transform: rotateY(252deg) translateZ(200px); }
-.carousel__cell:nth-child(9) { transform: rotateY(288deg) translateZ(200px); }
-.carousel__cell:nth-child(10) { transform: rotateY(324deg) translateZ(200px); }
-
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(200px);}
+.carousel__cell:nth-child(2) { transform: rotateY( 30deg) translateZ(200px);}
+.carousel__cell:nth-child(3) { transform: rotateY( 60deg) translateZ(200px);}
+.carousel__cell:nth-child(4) { transform: rotateY( 90deg) translateZ(200px);}
+.carousel__cell:nth-child(5) { transform: rotateY(120deg) translateZ(200px);}
+.carousel__cell:nth-child(6) { transform: rotateY(150deg) translateZ(200px);}
+.carousel__cell:nth-child(7) { transform: rotateY(180deg) translateZ(200px);}
+.carousel__cell:nth-child(8) { transform: rotateY(210deg) translateZ(200px);}
+.carousel__cell:nth-child(9) { transform: rotateY(240deg) translateZ(200px);}
+.carousel__cell:nth-child(10) { transform: rotateY(270deg) translateZ(200px);}
+.carousel__cell:nth-child(11) { transform: rotateY(300deg) translateZ(200px);}
+.carousel__cell:nth-child(12) { transform: rotateY(330deg) translateZ(200px);}
 
 @media (min-width: $breakpoint-tablet){
     .skills-section{
@@ -142,19 +149,21 @@
         }
     }
     @keyframes spin {
-        from {transform: translateZ(-385px) rotateY(0); }
-        to   {transform: translateZ(-385px) rotateY(-360deg); }
+        from {transform: translateZ(-466.5px) rotateY(0); }
+        to   {transform: translateZ(-466.5px) rotateY(-360deg); }
     }
-    .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(385px); }
-    .carousel__cell:nth-child(2) { transform: rotateY( 36deg) translateZ(385px); }
-    .carousel__cell:nth-child(3) { transform: rotateY( 72deg) translateZ(385px); }
-    .carousel__cell:nth-child(4) { transform: rotateY(108deg) translateZ(385px); }
-    .carousel__cell:nth-child(5) { transform: rotateY(144deg) translateZ(385px); }
-    .carousel__cell:nth-child(6) { transform: rotateY(180deg) translateZ(385px); }
-    .carousel__cell:nth-child(7) { transform: rotateY(216deg) translateZ(385px); }
-    .carousel__cell:nth-child(8) { transform: rotateY(252deg) translateZ(385px); }
-    .carousel__cell:nth-child(9) { transform: rotateY(288deg) translateZ(385px); }
-    .carousel__cell:nth-child(10) { transform: rotateY(324deg) translateZ(385px);}
+    .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(2) { transform: rotateY( 30deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(3) { transform: rotateY( 60deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(4) { transform: rotateY( 90deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(5) { transform: rotateY(120deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(6) { transform: rotateY(150deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(7) { transform: rotateY(180deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(8) { transform: rotateY(210deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(9) { transform: rotateY(240deg) translateZ(466.5px); }
+    .carousel__cell:nth-child(10) { transform: rotateY(270deg) translateZ(466.5px);}
+    .carousel__cell:nth-child(11) { transform: rotateY(300deg) translateZ(466.5px);}
+    .carousel__cell:nth-child(12) { transform: rotateY(330deg) translateZ(466.5px);}
 }
 
 @media (min-width: $breakpoint-desktop){
@@ -176,11 +185,11 @@
                 perspective: 1000px;
 
                 #skills-carousel {
-                    transform: translateZ(-615.5px);
+                    transform: translateZ(-746px);
 
                     .carousel__cell {
-                        width: 350px;
-                        height: 200px;
+                        width: 380px;
+                        height: 220px;
                         font-size: 28px;
 
                         .skill-img {
@@ -193,20 +202,20 @@
         }
     }
 
-    .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(700px); }
-    .carousel__cell:nth-child(2) { transform: rotateY( 30deg) translateZ(700px); }
-    .carousel__cell:nth-child(3) { transform: rotateY( 60deg) translateZ(700px); }
-    .carousel__cell:nth-child(4) { transform: rotateY( 90deg) translateZ(700px); }
-    .carousel__cell:nth-child(5) { transform: rotateY(120deg) translateZ(700px); }
-    .carousel__cell:nth-child(6) { transform: rotateY(150deg) translateZ(700px); }
-    .carousel__cell:nth-child(7) { transform: rotateY(180deg) translateZ(700px); }
-    .carousel__cell:nth-child(8) { transform: rotateY(210deg) translateZ(700px); }
-    .carousel__cell:nth-child(9) { transform: rotateY(240deg) translateZ(700px); }
-    .carousel__cell:nth-child(10) { transform: rotateY(270deg) translateZ(700px);}
-    .carousel__cell:nth-child(11) { transform: rotateY(300deg) translateZ(700px);}
-    .carousel__cell:nth-child(12) { transform: rotateY(330deg) translateZ(700px);}
+    .carousel__cell:nth-child(1) { transform: rotateY( 0deg) translateZ(746px); }
+    .carousel__cell:nth-child(2) { transform: rotateY( 30deg) translateZ(746px); }
+    .carousel__cell:nth-child(3) { transform: rotateY( 60deg) translateZ(746px); }
+    .carousel__cell:nth-child(4) { transform: rotateY( 90deg) translateZ(746px); }
+    .carousel__cell:nth-child(5) { transform: rotateY(120deg) translateZ(746px); }
+    .carousel__cell:nth-child(6) { transform: rotateY(150deg) translateZ(746px); }
+    .carousel__cell:nth-child(7) { transform: rotateY(180deg) translateZ(746px); }
+    .carousel__cell:nth-child(8) { transform: rotateY(210deg) translateZ(746px); }
+    .carousel__cell:nth-child(9) { transform: rotateY(240deg) translateZ(746px); }
+    .carousel__cell:nth-child(10) { transform: rotateY(270deg) translateZ(746px);}
+    .carousel__cell:nth-child(11) { transform: rotateY(300deg) translateZ(746px);}
+    .carousel__cell:nth-child(12) { transform: rotateY(330deg) translateZ(746px);}
     @keyframes spin {
-    from {transform: translateZ(-615.5px) rotateY(0); }
-    to   {transform: translateZ(-615.5px) rotateY(-360deg); }
+    from {transform: translateZ(-746px) rotateY(0); }
+    to   {transform: translateZ(-746px) rotateY(360deg); }
     }
 }

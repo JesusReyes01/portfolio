@@ -3,7 +3,7 @@
 .contact-section{
     background-color: $contact-color;
     color: white;
-    padding: 50px 0px 50px 0px;
+    padding: 150px 0px 50px 0px;
 
     .email-alert{
         width: 300px;
@@ -52,6 +52,7 @@ footer {
 @media (min-width: $breakpoint-tablet){
     .contact-section{
         padding: 100px;
+
         .email-alert{
             width: 400px;
         }
@@ -65,6 +66,10 @@ footer {
     }
     .contact-section p{
         font-size: 20px;
+    }
+    footer {
+        margin-top: 80px;
+        font-size: 12px;
     }
 }
 
