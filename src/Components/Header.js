@@ -15,13 +15,13 @@ const Header = () => {
             projectsLink.classList.remove('white')
             contactLink.classList.remove('white')
         } 
-        else if (currentScrollPos > 1500 && currentScrollPos < 3700){
+        else if (currentScrollPos > 1500 && currentScrollPos < 4500){
             document.getElementById("navbar").style.top = "0";
             skillsLink.classList.remove('white')
             projectsLink.classList.add('white')
             contactLink.classList.remove('white')
         }
-        else if (currentScrollPos > 3700){
+        else if (currentScrollPos > 4500){
             document.getElementById("navbar").style.top = "0";
             skillsLink.classList.remove('white')
             projectsLink.classList.remove('white')

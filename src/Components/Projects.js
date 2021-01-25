@@ -50,6 +50,7 @@ const Projects = () => {
 
             <article className='scango'>
                 <h2>Scan & Go</h2>
+                <p><strong>Technologies:</strong> React, Node</p>
                 <p><strong>Context:</strong> Devmountain Group Project with 2 week time limit. 
                     The goal was to make a full stack site that is intuitive, user friendly, and engaging while working on a team.</p>
                 <p><strong>Description:</strong> Scan&Go is a site that allows shoppers to use their phones to scan items then pay on their device. An 'exit pass' is 
@@ -68,7 +69,7 @@ const Projects = () => {
 
             <article className='journalize'>
                 <h2>Journalize</h2>
-
+                <p><strong>Technologies:</strong> React, Node</p>
                 <p><strong>Context:</strong> Devmountain Personal Project with 2 week time limit. The goal 
                     was to make a full stack site that is fun, responsive, and easy to navigate.</p>
                 <p><strong>Description:</strong> Journalize is a private online journal/diary-hosting website. Users can create 
@@ -87,7 +88,7 @@ const Projects = () => {
 
             <article className='pixelArt'>
                 <h2>Pixal Art</h2>
-                
+                <p><strong>Technologies:</strong> React, Node</p>
                 <p><strong>Description:</strong>  Pixel Art is free online pixel drawing tool that allows you to make pixel art.</p>
 
                 <div className='project-links'>
