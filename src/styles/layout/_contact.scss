@@ -3,7 +3,7 @@
 .contact-section{
     background-color: $contact-color;
     color: white;
-    padding: 150px 0px 50px 0px;
+    padding: 140px 0px 25px 0px;
 
     .email-alert{
         width: 300px;
@@ -58,7 +58,7 @@ footer {
         }
         .contact-title{
             font-size: 3em;
-            padding-bottom: 50px;
+            padding-bottom: 60px;
         }
         .email-form{
             width: 400px;    
@@ -68,7 +68,7 @@ footer {
         font-size: 20px;
     }
     footer {
-        margin-top: 80px;
+        margin-top: 140px;
         font-size: 12px;
     }
 }
@@ -77,16 +77,27 @@ footer {
     .contact-section{
         padding: 100px;
     
+        .contact-title{
+            font-size: 3em;
+            padding-bottom: 50px;
+            margin-bottom: 0px;
+        }
+
         .email-form{
             width: 500px;    
         }
         .contact-icon-flex{
-            padding: 50px;
+            padding: 40px;
         
             .icon{
                 display: inline-block;
                 margin: 0px 20px 0px 20px;
             }
         }
+    }
+
+    footer {
+        margin-top: 0px;
+        font-size: 12px;
     }
 }

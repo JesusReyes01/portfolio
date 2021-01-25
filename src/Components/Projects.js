@@ -50,7 +50,7 @@ const Projects = () => {
             {/* Scan & Go PROJECT SECTION */}
             <article className='scango'>
                 <h2>Scan & Go</h2>
-                
+
                 <p><strong>Technologies:</strong> React, Node, PostgreSQL, Heroku </p>
                 <p><strong>Context:</strong> Devmountain Group Project with 2 week time limit. 
                     The goal was to make a full stack site that is intuitive, user friendly, and engaging while working on a team.</p>
@@ -94,11 +94,13 @@ const Projects = () => {
                 <h2>Pixal Art</h2>
 
                 <p><strong>Technologies:</strong> React, Node</p>
+                <p><strong>Context:</strong> Udacity Project finished in Vanilla Javascript and rewritten to React</p>
                 <p><strong>Description:</strong>  Pixel Art is free online pixel drawing tool that allows you to make pixel art.</p>
 
                 <div className='project-links'>
                     <a href="https://pixelart.jesusreyes.dev/">DEMO</a>
-                    <a href="https://github.com/JesusReyes01/Pixel-Art-React">SOURCE</a>
+                    <a href="https://github.com/JesusReyes01/Pixel-Art-React">REACT SOURCE</a>
+                    <a href="https://github.com/JesusReyes01/Pixel-Art-Maker">JAVASCRIPT SOURCE</a>
                 </div>
 
                 <Carousel className='pixelArtCarousel'>
