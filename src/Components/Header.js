@@ -27,8 +27,8 @@ const Header = () => {
             projectsStart = 1650;
             contactStart = 5015;
         } else {
-            skillsStart = 780;
-            projectsStart = 1600;
+            skillsStart = 830;
+            projectsStart = 1650;
             contactStart = 4865;
         }
 
