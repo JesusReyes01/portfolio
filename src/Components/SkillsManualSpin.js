@@ -116,9 +116,10 @@ const Skills = () => {
                 <button className="skills-right-arrow" onClick={next}>{chevronRight}</button>}
             </div>
             {spinning?
-            <Button onClick={stopCarousel}>Stop Spin</Button>
+            <button className='btnr btn-three' onClick={stopCarousel}>STOP SPIN</button>
             :
-            <Button onClick={startCarousel}>Start Spin</Button>}
+            <button className='btnr btn-three' onClick={startCarousel}>START SPIN</button>
+            }
         </section>
 
     )

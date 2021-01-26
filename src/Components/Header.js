@@ -34,7 +34,6 @@ const Header = () => {
 
         if (currentScrollPos >= skillsStart && currentScrollPos < projectsStart) {
             document.getElementById("navbar").style.top = "0";
-            // homeLink.classList.add('yellow')
             skillsLink.classList.add('white')
             projectsLink.classList.remove('white')
             contactLink.classList.remove('white')

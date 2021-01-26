@@ -8,8 +8,15 @@ a:hover{
   color: inherit; 
 }
 *{
-  outline:none !important;
+  outline: none !important;
 }
 ::-webkit-scrollbar {
     display: none;
 }
+button:focus {outline: none;}
+
+button:active {outline: none;}
+
+button{
+  outline: none !important;
+ }
