@@ -23,7 +23,7 @@ const Header = () => {
             projectsStart = 1595;
             contactStart = 4625;
         } else if (currentWidth >= 901 && currentWidth < 1301) {
-            skillsStart = 935;
+            skillsStart = 870;
             projectsStart = 1650;
             contactStart = 5015;
         } else {
