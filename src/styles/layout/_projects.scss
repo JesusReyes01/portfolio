@@ -161,8 +161,16 @@
         -webkit-box-shadow: 0px 0px 11px -3px rgba(255,255,255,1);
         -moz-box-shadow: 0px 0px 11px -3px rgba(255,255,255,1);
         box-shadow: 0px 0px 11px -3px rgba(255,255,255,1);
-        .portfolio p a:hover{
+        
+        // p .portfolioGitHub {
+        //     color: $off-yellow;
+        // }
+         p a{
             color: $off-yellow;
+        }
+
+         p a:hover{
+            color: #007bff;
         }
     }
 }
@@ -227,7 +235,7 @@ strong{
                 }
             }
         }
-        
+
         .pixelArt p{
             width: 80%;    
             font-size: 18px;
@@ -253,6 +261,84 @@ strong{
         }
         .scango h2{
             font-size: 36px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        .scango p{
+            width: 80%;
+            font-size: 18px;
+        }
+        .journalize{
+            margin-bottom: 60px;
+          
+            .journalizeCarousel{
+                width: 80%;
+
+            }
+        }
+        .journalize h2{
+            font-size: 36px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        .journalize p{
+            width: 80%;
+            font-size: 18px;
+        }
+        .pixelArt{
+            margin-bottom: 60px;
+          
+            .project-links{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 10px;
+            }
+            .project-links a{
+                width: 100px;
+            }
+
+            .pixelArtCarousel{
+                width: 80%;
+
+            }
+        }
+        .pixelArt h2{
+            font-size: 36px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+        .pixelArt p{
+            width: 80%;
+            font-size: 18px;
+        }
+        // .portfolio{
+        //     padding:30px;
+        // }
+        
+    }
+}
+
+@media (min-width: $breakpoint-wideDesktop){
+    .projects-section{
+        padding: 100px 18vw;
+        .projects-title{
+            font-size: 3em;
+            padding-bottom: 50px;
+        }
+        .scango{
+            margin-bottom: 60px;
+            
+            .scanGoCarousel{
+
+                .w-101{
+                    height: 500px;
+                }
+            }
+        }
+        .scango h2{
+            // height: 70px;
+            // margin-bottom: 20px;
         }
         .scango p{
             width: 80%;
@@ -276,6 +362,13 @@ strong{
         .pixelArt{
             margin-bottom: 60px;
           
+            .project-links{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 20px;
+            }
+
             .pixelArtCarousel{
                 width: 80%;
 
@@ -288,8 +381,6 @@ strong{
             width: 80%;
             font-size: 18px;
         }
-        .portfolio{
-            padding:30px;
-        }
+        
     }
 }

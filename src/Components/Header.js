@@ -23,18 +23,18 @@ const Header = () => {
             projectsStart = 1595;
             contactStart = 4625;
         } else if (currentWidth >= 901 && currentWidth < 1301) {
-            skillsStart = 990;
-            projectsStart = 1500;
-            contactStart = 4480;
+            skillsStart = 935;
+            projectsStart = 1650;
+            contactStart = 5015;
         } else {
-            skillsStart = 990;
-            projectsStart = 1500;
-            contactStart = 4480;
+            skillsStart = 780;
+            projectsStart = 1600;
+            contactStart = 4865;
         }
 
         if (currentScrollPos >= skillsStart && currentScrollPos < projectsStart) {
             document.getElementById("navbar").style.top = "0";
-            homeLink.classList.add('yellow')
+            // homeLink.classList.add('yellow')
             skillsLink.classList.add('white')
             projectsLink.classList.remove('white')
             contactLink.classList.remove('white')

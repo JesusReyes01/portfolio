@@ -109,7 +109,7 @@ const Projects = () => {
             </article>
             {/* Portfolio GITHUB LINK SECTION */}
             <article className='portfolio'>
-                <p>View this portfolio site's source code on <a href='https://github.com/JesusReyes01/portfolio'>GitHub</a></p>
+                <p>View this portfolio site's source code on <a  href='https://github.com/JesusReyes01/portfolio'>GitHub</a></p>
 
             </article>
             

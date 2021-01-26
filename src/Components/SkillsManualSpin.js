@@ -32,7 +32,7 @@ const Skills = () => {
     } else if (currentWidth >= 599 && currentWidth < 901) {
         tranZ = 429;
     } else if (currentWidth >= 901 && currentWidth < 1301) {
-        tranZ = 597;
+        tranZ = 522;
     } else {
         tranZ = 746;
     } 
@@ -78,7 +78,7 @@ const Skills = () => {
         carousel.style.animation= 'none';
         setSpin(false)
     }
-    
+
     const startCarousel = () => {
         let carousel = document.getElementById('skills-carousel');
         carousel.style.transform = `translateZ(-${tranZ}px)`;

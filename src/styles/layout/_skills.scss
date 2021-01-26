@@ -181,7 +181,7 @@
 
 @media (min-width: $breakpoint-desktop){
     .skills-section{
-    background: radial-gradient(circle, rgb(92, 92, 92) 0%, rgba(0,0,0,1) 35%);
+    background: radial-gradient(circle, rgb(92, 92, 92) 0%, rgba(0,0,0,1) 45%);
     padding: 100px 5vw;
     margin: 0 auto;
 
@@ -190,59 +190,64 @@
         }
 
         .carousel-flex{
-            height: 400px;
-            margin-bottom: 100px;
-            width: 90vw;
-            display:flex;
-            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+
+            .skills-left-arrow{
+                width: 40px;
+            }
 
             .stage {
                 // border: 1px solid #CCC;
-                width: 320px;
+                margin: 0vw 25vw;
+                width: 280px;
                 height: 220px;
-                perspective: 700px;
+                perspective: 800px;
 
                 #skills-carousel {
-                    transform: translateZ(-597px);
+                    transform: translateZ(-522px);
 
                     .carousel__cell {
-                        width: 300px;
-                        height: 200px;
+                        width: 260px;
+                        height: 160px;
                         font-size: 28px;
 
                         .skill-img {
-                            padding-top: 20px;
-                            height: 175px;
+                            margin-top: 25px;
+                            height: 100px;
                         }
                     }
                 }
             }
+            .skills-right-arrow{
+                width: 40px;
+            }
         }
     }
 
-    .carousel__cell:nth-child(1) { transform: rotateY( 0deg) translateZ(597px); }
-    .carousel__cell:nth-child(2) { transform: rotateY( 30deg) translateZ(597px); }
-    .carousel__cell:nth-child(3) { transform: rotateY( 60deg) translateZ(597px); }
-    .carousel__cell:nth-child(4) { transform: rotateY( 90deg) translateZ(597px); }
-    .carousel__cell:nth-child(5) { transform: rotateY(120deg) translateZ(597px); }
-    .carousel__cell:nth-child(6) { transform: rotateY(150deg) translateZ(597px); }
-    .carousel__cell:nth-child(7) { transform: rotateY(180deg) translateZ(597px); }
-    .carousel__cell:nth-child(8) { transform: rotateY(210deg) translateZ(597px); }
-    .carousel__cell:nth-child(9) { transform: rotateY(240deg) translateZ(597px); }
-    .carousel__cell:nth-child(10) { transform: rotateY(270deg) translateZ(597px);}
-    .carousel__cell:nth-child(11) { transform: rotateY(300deg) translateZ(597px);}
-    .carousel__cell:nth-child(12) { transform: rotateY(330deg) translateZ(597px);}
+    .carousel__cell:nth-child(1) { transform: rotateY( 0deg) translateZ(522px); }
+    .carousel__cell:nth-child(2) { transform: rotateY( 30deg) translateZ(522px); }
+    .carousel__cell:nth-child(3) { transform: rotateY( 60deg) translateZ(522px); }
+    .carousel__cell:nth-child(4) { transform: rotateY( 90deg) translateZ(522px); }
+    .carousel__cell:nth-child(5) { transform: rotateY(120deg) translateZ(522px); }
+    .carousel__cell:nth-child(6) { transform: rotateY(150deg) translateZ(522px); }
+    .carousel__cell:nth-child(7) { transform: rotateY(180deg) translateZ(522px); }
+    .carousel__cell:nth-child(8) { transform: rotateY(210deg) translateZ(522px); }
+    .carousel__cell:nth-child(9) { transform: rotateY(240deg) translateZ(522px); }
+    .carousel__cell:nth-child(10) { transform: rotateY(270deg) translateZ(522px);}
+    .carousel__cell:nth-child(11) { transform: rotateY(300deg) translateZ(522px);}
+    .carousel__cell:nth-child(12) { transform: rotateY(330deg) translateZ(522px);}
 
     @keyframes spin {
-    from {transform: translateZ(-597px) rotateY(0); }
-    to   {transform: translateZ(-597px) rotateY(-360deg); }
+    from {transform: translateZ(-522px) rotateY(0); }
+    to   {transform: translateZ(-522px) rotateY(-360deg); }
     }
 }
 
 @media (min-width: $breakpoint-wideDesktop){
     .skills-section{
     background: radial-gradient(circle, rgb(92, 92, 92) 0%, rgba(0,0,0,1) 35%);
-    padding: 100px 50px;
+    padding: 100px 0px;
 
         .skills-title{
         padding-bottom: 20px;
@@ -251,13 +256,13 @@
         .carousel-flex{
             height: 400px;
             margin-bottom: 100px;
-            width: 80vw;
+            // width: 80vw;
             display:flex;
             margin: 50px auto;
             .stage {
                 // border: 1px solid #CCC;
                 width: 400px;
-                height: 220px;
+                height: 320px;
                 perspective: 800px;
 
                 #skills-carousel {
@@ -266,11 +271,15 @@
                     .carousel__cell {
                         width: 380px;
                         height: 220px;
-                        font-size: 28px;
+                        font-size: 32px;
 
+                        p {
+                            font-size: 28px;
+                            font-weight: 300;
+                        }
                         .skill-img {
-                            padding-top: 20px;
-                            height: 200px;
+                            margin: 20px;
+                            height: 160px;
                         }
                     }
                 }
