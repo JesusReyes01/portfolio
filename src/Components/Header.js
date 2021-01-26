@@ -16,7 +16,7 @@ const Header = () => {
 
         if (currentWidth < 599) {
             skillsStart = 665;
-            projectsStart = 1300;
+            projectsStart = 1220;
             contactStart = 3790;
         } else if (currentWidth >= 599 && currentWidth < 901) {
             skillsStart = 990;
