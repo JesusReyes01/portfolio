@@ -10,12 +10,32 @@ import sass from '../assets/skills/sass.png'
 import css3 from '../assets/skills/css3.png'
 import html5 from '../assets/skills/html5.png'
 import git from '../assets/skills/git.png'
+import python from '../assets/skills/python.png'
+import bootstrap from '../assets/skills/bootstrap.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const Skills = () => {
-    const [spinning, setSpin] = useState(true)
+    const [spinning, setSpin] = useState(true);
+
+    const [currentWidth, setCurrentWidth] = useState();
+
+    React.useEffect(() => {
+        setCurrentWidth(window.innerWidth)
+    },[window.innerWidth])
+
+    let tranZ;
+
+    if (currentWidth < 599) {
+        tranZ = 200;
+    } else if (currentWidth >= 599 && currentWidth < 901) {
+        tranZ = 429;
+    } else if (currentWidth >= 901 && currentWidth < 1301) {
+        tranZ = 597;
+    } else {
+        tranZ = 746;
+    } 
 
     const skills = [
         {name: 'REACT', img: react},
@@ -28,6 +48,8 @@ const Skills = () => {
         {name: 'EXPRESS', img: express},
         {name: 'POSTGRESQL', img: postgresql},
         {name: 'GIT', img: git},
+        {name: 'PYTHON', img: python},
+        {name: 'BOOTSTRAP', img: bootstrap}
     ]
     const chevronLeft = <FontAwesomeIcon icon={faChevronLeft} size='2x' />
     const chevronRight = <FontAwesomeIcon icon={faChevronRight} size='2x' />
@@ -45,20 +67,21 @@ const Skills = () => {
 
     const rotateCarousel = () => {
         let carousel = document.getElementById('skills-carousel');
-        let cellCount = 10;
+        let cellCount = 12;
         let angle = selectedIndex / cellCount * -360;
-        carousel.style.transform = 'translateZ(-615.5px) rotateY(' + angle + 'deg)';
+        carousel.style.transform = `translateZ(-${tranZ}px) rotateY(${angle}deg)`;
     }
     
     const stopCarousel = () => {
        let carousel = document.getElementById('skills-carousel');
-        carousel.style.transform = 'translateZ(-615.5px)';
+        carousel.style.transform = `translateZ(-${tranZ}px)`;
         carousel.style.animation= 'none';
         setSpin(false)
     }
+    
     const startCarousel = () => {
         let carousel = document.getElementById('skills-carousel');
-        carousel.style.transform = 'translateZ(-615.5px)';
+        carousel.style.transform = `translateZ(-${tranZ}px)`;
         carousel.style.animation= 'spin 18s infinite linear';
         setSpin(true)
     }

@@ -4,24 +4,48 @@ const Header = () => {
 
     window.onscroll = function() {
         let currentScrollPos = window.pageYOffset;
+        let currentWidth = window.innerWidth;
         let homeLink = document.getElementsByClassName("home")[0]
         let skillsLink = document.getElementsByClassName("skills")[0]
         let projectsLink = document.getElementsByClassName("projects")[0]
         let contactLink = document.getElementsByClassName("contact")[0]
-        if (currentScrollPos > 840 && currentScrollPos < 1500) {
+
+        let skillsStart;
+        let projectsStart;
+        let contactStart;
+
+        if (currentWidth < 599) {
+            skillsStart = 665;
+            projectsStart = 1300;
+            contactStart = 3790;
+        } else if (currentWidth >= 599 && currentWidth < 901) {
+            skillsStart = 990;
+            projectsStart = 1595;
+            contactStart = 4625;
+        } else if (currentWidth >= 901 && currentWidth < 1301) {
+            skillsStart = 990;
+            projectsStart = 1500;
+            contactStart = 4480;
+        } else {
+            skillsStart = 990;
+            projectsStart = 1500;
+            contactStart = 4480;
+        }
+
+        if (currentScrollPos >= skillsStart && currentScrollPos < projectsStart) {
             document.getElementById("navbar").style.top = "0";
             homeLink.classList.add('yellow')
             skillsLink.classList.add('white')
             projectsLink.classList.remove('white')
             contactLink.classList.remove('white')
         } 
-        else if (currentScrollPos > 1500 && currentScrollPos < 4480){
+        else if (currentScrollPos >= projectsStart && currentScrollPos < contactStart){
             document.getElementById("navbar").style.top = "0";
             skillsLink.classList.remove('white')
             projectsLink.classList.add('white')
             contactLink.classList.remove('white')
         }
-        else if (currentScrollPos > 4480){
+        else if (currentScrollPos >= contactStart){
             document.getElementById("navbar").style.top = "0";
             skillsLink.classList.remove('white')
             projectsLink.classList.remove('white')

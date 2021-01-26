@@ -7,9 +7,10 @@
     background-repeat: no-repeat;
     background-position: bottom;
     color: $text-color;
+    height: 100vh;
 
     .about-main-text{
-        padding: 220px 0px 350px 0px;
+        padding: 220px 0px 0px 0px;
     
         .about-text{
             font-family: 'Montserrat', sans-serif;
