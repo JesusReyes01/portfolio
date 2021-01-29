@@ -15,17 +15,22 @@ const Contact = () => {
         subject: '',
         message: ''
     })
+    //Error handling for rejected email
     const [showReject, setShowReject] = useState(false);
+    //For email sent alert
     const [emailSent, setEmailSent] = useState(false);
 
+    //Handles all input events
     const handleInput = (event) => {
         setEmail({...emailBody, [event.target.name]: event.target.value})
     }  
 
+    //Assigns FontAwesome icons to variables
     const linkedInSquare = <FontAwesomeIcon icon={faLinkedin} size='3x' />
     const githubSquare = <FontAwesomeIcon icon={faGithubSquare} size='3x' />
     const emailSquare = <FontAwesomeIcon icon={faEnvelopeSquare} size='3x' />
     
+    //Send email API call and resets state if successful
     const sendEmail = async(e) => {
         e.preventDefault();
         const {name, email, subject, message} = emailBody;

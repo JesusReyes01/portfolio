@@ -6,6 +6,7 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
+    //Assigns icons from Font Awesome package to variable
     const linkedInSquare = <FontAwesomeIcon icon={faLinkedin} size='3x' />
     const githubSquare = <FontAwesomeIcon icon={faGithubSquare} size='3x' />
     const emailSquare = <FontAwesomeIcon icon={faEnvelopeSquare} size='3x' />
