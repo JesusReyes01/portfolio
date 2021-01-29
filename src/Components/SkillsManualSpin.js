@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Button from 'react-bootstrap/Button';
 import react from '../assets/skills/react.png'
 import redux from '../assets/skills/redux.png'
 import node from '../assets/skills/node.png'

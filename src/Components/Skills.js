@@ -29,6 +29,7 @@ const Skills = () => {
         {name: 'GIT', img: git},
     ]
 
+    //Maps skills array
     const skillsMapped = skills.map((skill, i) => {
         return (
             <div className='carousel__cell' key={i}>
