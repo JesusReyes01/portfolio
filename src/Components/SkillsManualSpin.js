@@ -17,16 +17,18 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const Skills = () => {
+    //State for spinning boolean
     const [spinning, setSpin] = useState(true);
-
+    //State for Width to control carousel width
     const [currentWidth, setCurrentWidth] = useState();
 
+    //Hook to add update to width state
     React.useEffect(() => {
         setCurrentWidth(window.innerWidth)
     },[window.innerWidth])
 
+    // Z axis translate distance variable
     let tranZ;
-
     if (currentWidth < 599) {
         tranZ = 200;
     } else if (currentWidth >= 599 && currentWidth < 901) {
@@ -51,9 +53,12 @@ const Skills = () => {
         {name: 'PYTHON', img: python},
         {name: 'BOOTSTRAP', img: bootstrap}
     ]
+
+    //Assigns icons to variables from FontAwesome package
     const chevronLeft = <FontAwesomeIcon icon={faChevronLeft} size='2x' />
     const chevronRight = <FontAwesomeIcon icon={faChevronRight} size='2x' />
 
+    //Maps skill array inside component and adds JSX for individual cells
     const skillsMapped = skills.map((skill, i) => {
         return (
             <div className='carousel__cell' key={i}>
@@ -63,15 +68,17 @@ const Skills = () => {
         )
     })
 
+    //selectedIndex used to spin carousel correctly in manual mode
     let selectedIndex = 0;
-
     const rotateCarousel = () => {
         let carousel = document.getElementById('skills-carousel');
+        //Number of cells for carousel
         let cellCount = 12;
         let angle = selectedIndex / cellCount * -360;
         carousel.style.transform = `translateZ(-${tranZ}px) rotateY(${angle}deg)`;
     }
     
+    //Function to stop carousel
     const stopCarousel = () => {
        let carousel = document.getElementById('skills-carousel');
         carousel.style.transform = `translateZ(-${tranZ}px)`;
@@ -79,6 +86,7 @@ const Skills = () => {
         setSpin(false)
     }
 
+    //Function to start carousel
     const startCarousel = () => {
         let carousel = document.getElementById('skills-carousel');
         carousel.style.transform = `translateZ(-${tranZ}px)`;
@@ -86,14 +94,15 @@ const Skills = () => {
         setSpin(true)
     }
 
-    const previous = () =>  {
-        selectedIndex--;
+    //Function for left arrow
+    const next = () =>  {
+        selectedIndex++;
         rotateCarousel();
     };
 
-    
-    const next = () =>  {
-        selectedIndex++;
+    //Function for right arrow
+    const previous = () =>  {
+        selectedIndex--;
         rotateCarousel();
     };
 
