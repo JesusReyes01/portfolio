@@ -1,6 +1,5 @@
 import './styles/main.scss';
 import './styles/layout/App.scss'
-// import "./App.scss";
 import Header from './Components/Header';
 import About from './Components/About';
 // import Skills from './Components/Skills';

@@ -129,7 +129,6 @@ const Skills = () => {
             <button className='btnr btn-three' onClick={startCarousel}>START SPIN</button>
             }
         </section>
-
     )
 }
 
