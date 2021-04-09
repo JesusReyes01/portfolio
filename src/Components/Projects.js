@@ -100,7 +100,7 @@ const Projects = () => {
                 <div className='project-links'>
                     <a href="https://pixelart.jesusreyes.dev/">DEMO</a>
                     <a href="https://github.com/JesusReyes01/Pixel-Art-React">REACT SOURCE</a>
-                    <a href="https://github.com/JesusReyes01/Pixel-Art-Maker">JAVASCRIPT SOURCE</a>
+                    <a href="https://github.com/JesusReyes01/Pixel-Art-Maker">VANILLA JAVASCRIPT SOURCE</a>
                 </div>
 
                 <Carousel className='pixelArtCarousel'>
